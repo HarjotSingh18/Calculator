@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let buttons = [
+        "7", "8", "9", "+",
+        "4", "5", "6", "-",
+        "1", "2", "3", "*",
+        "0", ".", "=", "/"
+    ]
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        LazyVGrid(columns: columns, spacing: 20) {
+            
+            ForEach(buttons, id: \.self) { label in
+                Button(action: {
+                    print("\(label) tapped")
+                }) {
+                    Text(label)
+                    .font(.title)
+                    .frame(width: 80, height: 80)
+                    .background(Color.gray.opacity(0.2))
+                    .foregroundColor(.black)
+                    .clipShape(Circle())
+                    
+                }
+                
+            }
+            
         }
-        .padding()
+        
     }
 }
 
