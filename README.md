@@ -12,21 +12,18 @@ A simple, modern calculator app that supports basic arithmetic operations and a 
 - 📱 Responsive layout that works on different screen sizes  
 - 🌙 (Optional) Light / Dark mode
 
-> Customize this list with whatever your app actually supports.
 
 ---
 
 ## 🛠 Tech Stack
 
-- Language: `Swift` / `Kotlin` / `Java` / `JavaScript` / `Python` (pick one)  
-- Framework: `UIKit` / `SwiftUI` / `Android SDK` / `React Native` / etc.  
-- Minimum OS: iOS `XX` / Android `XX` / etc.
+- Language: `Swift` 
+- Framework: `SwiftUI` 
+- Minimum OS: iOS `XX` 
 
 ---
 
 ## 📸 Screenshots
-
-_Add screenshots of your app here_
 
 | Home Screen |
 | ----------- |
@@ -38,8 +35,7 @@ _Add screenshots of your app here_
 
 ### Prerequisites
 
-- [Xcode](https://developer.apple.com/xcode/) / [Android Studio](https://developer.android.com/studio) / relevant tools installed  
-- Platform SDKs installed (iOS / Android / etc.)
+- [Xcode](https://developer.apple.com/xcode/) 
 
 ### Installation
 
